@@ -1,40 +1,81 @@
-# budget-tracket
+# 19 Progressive Web Applications (PWA) Challenge: Budget Tracker
 
-* use IndexedDB to add offline functionality. Review 
-`Module 18`: NoSQL, `Lesson 4`: Add Offline Persistence with IndexedDB as a refresher on how to add this to your application.
-- Done!
+## Author: Rob Ellingson
+- Source: [Github](https://github.com/awolrob/budget-tracker) `https://github.com/awolrob/budget-tracker`
+- Deployed Site: [Heroku](https://desolate-hollows-04852.herokuapp.com/) `https://desolate-hollows-04852.herokuapp.com/`
 
-* add a service worker to your application. Review 
-`Module 19`: Progressive Web Applications (PWA), `Lesson 4`: Using Service Workers as a refresher on how to add this to your application.
-- Done!
+```md
+AS AN avid traveler
+I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
+SO THAT my account balance is accurate when I am traveling 
+```
 
-* you’ll need to deploy this application to Heroku using MongoDB Atlas. To review this process, look at 
-`Module 18`: NoSQL, `Lesson 5`: Add Mongoose Validation, specifically 18.5.5: Deploy to Heroku.
-
-* manually and add `manifest.json` to the root of the public/ directory of your application. You can also review 
-`Module 19`: Progressive Web Applications (PWA), `Lesson 5`: Convert the App to a PWA as a refresher on web manifests.
-- Done!
-
-Express.js server provided to you in the starter code.
-
-You should add your idb.js file to the public/js/ directory of your application.
-
-You should add your service worker to the root of the public/ directory of your application.
+```md
+GIVEN a Budget Tracker without an internet connection
+WHEN the user inputs an expense or deposit
+THEN they will receive a notification that they have added an expense or deposit
+WHEN the user reestablishes an internet connection
+THEN the deposits or expenses added while they were offline are added to their transaction history and their totals are updated
+```
 
 ## Install
 
+Express
 ```
 npm install express
 ```
+Mongoose
 ```
 npm install mongoose
 ```
-morgan
+Morgan
 ```
 npm install morgan
 ```
-compression
+Compression
 ```
 npm install compression
 ```
 
+## Production Environment:
+
+1) Create Production Database in Atlas
+   * create database name space in Atlas (my result: Budget-Tracker.Budget)
+
+2) Deploy to heroku and set up Mongo Atlas environment variable in heroku
+    * in gitbash cli
+    * heroku create (my result - https://desolate-hollows-04852.herokuapp.com/ )
+    Note: In heroku - add MongoDB Atlas environment variables
+
+    * git add -A
+    * git push heroku main
+    * heroku open
+
+## Mock-Up
+The following animation demonstrates the application functionality:
+
+![](./Assets/19-pwa-homework-demo-01.png)
+
+## Run
+* Open ( https://desolate-hollows-04852.herokuapp.com/ ) in your browser.
+
+## Final Pages
+The following images were generated using the application:
+
+- Offline transactions
+![](./Assets/19-pwa-working-deployed-app.PNG)
+
+- Working Manifest
+![](./Assets/19-manifest.PNG)
+
+- Working Cache
+![](./Assets/19-pwa-cache.PNG)
+
+- PWA Installed
+![](./Assets/19-pwa-working-installed-pwa.PNG)
+
+- MongoDB Atlas Database updated with on-line and off-line transactions
+![](./Assets/19-pwa-database-updated.PNG)
+
+- - -
+` https://github.com/awolrob | 2021-10-02 ` 
