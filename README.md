@@ -1,7 +1,7 @@
 # 19 Progressive Web Applications (PWA) Challenge: Budget Tracker
 
 ## Author: Rob Ellingson
-- Source: [Github](https://github.com/awolrob/budget-tracker) `https://github.com/awolrob/budget-tracker`
+- Source: [Github](https://github.com/awolrob/budget-tracket) `https://github.com/awolrob/budget-tracket`
 - Deployed Site: [Heroku](https://desolate-hollows-04852.herokuapp.com/) `https://desolate-hollows-04852.herokuapp.com/`
 
 ```md
