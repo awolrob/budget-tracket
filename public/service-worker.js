@@ -13,11 +13,11 @@ const FILES_TO_CACHE = [
     "./icons/icon-152x152.png",
     "./icons/icon-192x192.png",
     "./icons/icon-384x384.png",
-    "./icons/icon-512x512.png",
-    "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
-    "https://cdn.jsdelivr.net/npm/chart.js@2.8.0",
-    "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0",
-    "http://localhost:3001/api/transaction"
+    "./icons/icon-512x512.png"
+    // "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
+    // "https://cdn.jsdelivr.net/npm/chart.js@2.8.0",
+    // "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0",
+    // "http://localhost:3001/api/transaction"
 ];
 
 self.addEventListener('fetch', function (e) {
