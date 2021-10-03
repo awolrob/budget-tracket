@@ -20,7 +20,7 @@ request.onsuccess = function (event) {
 
   if (navigator.onLine) {
     uploadBudget();
-  }
+  } 
 };
 
 request.onerror = function (event) {
@@ -73,7 +73,7 @@ function uploadBudget() {
           // clear all items in your store
           budgetObjectStore.clear();
           let errorEl = document.querySelector(".form .error");
-          errorEl.textContent = "Internet Connection Found! Local transactions added to your cloud budget account";
+          alert("Internet Connection Found!\nLocal transactions added to your cloud budget account");
           document.location.replace('/');
         })
         .catch(err => {
